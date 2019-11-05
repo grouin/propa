@@ -1,0 +1,27 @@
+%%%
+% This is the configuration file for 'propagation.pl' script which aims to propagate existing concept annotations to the remaining part of a corpus to process.
+
+
+% MINIMUM ANNOTATION SIZE: please define the minimum size (number of characters) of existing annotations that will be propagated (if size=0, all single characters annotated would be annotated in the remaining part of the corpus).
+
+size=3
+
+
+% MINIMUM ANNOTATION FREQUENCY: please define the minimum number of occurrences that must be found along existing annotations for the propagation (existing annotations found less than N times will not be propagated; allows to do not propagate hapax legomenon)
+
+frequency=0
+
+
+% FORBIDDEN TAG PROPAGATIONS: please indicate tags (as defined in the 'annotation.conf' file from BRAT) for which existing annotations will not be propagated (all tags separated by commas, e.g.: DATE,SIGNATURE). All annotations from those tags will not be propagated.
+
+forbidden=age,date,type
+
+
+% FORBIDDEN TOKEN PROPAGATIONS: please indicate the value to be used in the 'AnnotatorNotes' field from BRAT to indicate a given annotation must not be propagated (e.g., in order to do not propagate annotations of shorter tokens that could be embedded into longer ones). All annotations where user's comment will indicate this value will not be propagated. This value must be used for each form to do not propagate! Useful for tokens occurring only a few times...
+
+value=STOP
+
+
+% FORBIDDEN TOKEN PROPAGATIONS: please indicate all tokens (case sensitive) that must not be propagated if found in previous annotations, separated by commas (e.g., John,Jane). Useful for tokens occurring several times but with contextual annotation.
+
+blacklist=John,Jane

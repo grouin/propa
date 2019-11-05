@@ -34,8 +34,8 @@ Files:
 
 The same two options are available for all PERL scripts:
 
-* -r <directory containing ann/txt files>
-* -s <starting file name>
+* -r &lt;directory containing ann/txt files&gt;
+* -s &lt;starting file name&gt;
 
 The last option is useful in order to do not propagate existing
 annotations on already processed files
@@ -91,7 +91,7 @@ purposes, please cite the following publication:
 
 For help and feedback please contact the author below:
 
-* Grouin Cyril       &lt;cyril.grouin is s limsi ac fr&gt;
+* Grouin Cyril       &lt;cyril.grouin@limsi.fr&gt;
 
 This work was supported by the ANSM (French National Agency for
 Medicines and Health Products Safety) through the Vigi4MED project
