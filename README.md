@@ -9,7 +9,7 @@ to delete annotations.
 
 Files:
 
-* propagation-configuration.txt: main configuration file. Please
+* *propagation-configuration.txt*: main configuration file. Please
   indicate the minimum number of characters in entities to authorize
   propagation (e.g., size=3), the minimum number of occurrences that
   must be found along existing annotations for the propagation (e.g.,
@@ -20,15 +20,15 @@ Files:
   propagated if found in previous annotations (e.g.,
   blacklist=John,Jane)
 
-* propagation-v2.pl: current main script (v1 is an old version)
+* *propagation-v2.pl*: current main script (v1 is an old version)
 
-* deletion-lexicon.txt: list of tokens for which existing annotations
+* *deletion-lexicon.txt*: list of tokens for which existing annotations
   must be deleted
 
-* deletion-annotation.pl: script to delete annotations that have been
+* *deletion-annotation.pl*: script to delete annotations that have been
   erroneously propagated, based on the deletion-lexicon.txt file
 
-* supprime-annotations-imbriquees.pl: script to delete overlap
+* *supprime-annotations-imbriquees.pl*: script to delete overlap
   annotations. Allows to keep the longest annotation for annotations
   having the same start offset. Not a stable version
 
