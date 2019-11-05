@@ -39,7 +39,12 @@ The same two options are available for all PERL scripts:
 
 The last option is useful in order to do not propagate existing
 annotations on already processed files
-  
+
+In addition, option -t (only for script propagation-v2/3.pl) takes
+into account the tokenization (e.g., if "le" has been tagged as a DET,
+the bigrams "le" in the word "table" will not be tagged if option -t
+is used).
+
 ## License ##
 
 This toolbox is licenced under the term of the two-clause BSD Licence:
