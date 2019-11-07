@@ -20,7 +20,7 @@ Files:
   propagated if found in previous annotations (e.g.,
   blacklist=John,Jane)
 
-* *propagation-v2.pl*: current main script (v1 is an old version)
+* *propagation-v4.pl*: current main script (v1, 2, 3 are older versions)
 
 * *deletion-lexicon.txt*: list of tokens for which existing annotations
   must be deleted
@@ -40,10 +40,18 @@ The same two options are available for all PERL scripts:
 The last option is useful in order to do not propagate existing
 annotations on already processed files
 
-In addition, option -t (only for script propagation-v2/3.pl) takes
-into account the tokenization (e.g., if "le" has been tagged as a DET,
-the bigrams "le" in the word "table" will not be tagged if option -t
-is used).
+Specific options for propagation-v2.pl (and future versions):
+
+* -t takes into account the tokenization (e.g., if "le" has been
+tagged as a DET, the bigrams "le" in the word "table" will not be
+tagged if option -t is used).
+
+* -a (v4 and higher versions): allows to propagate attributes (only
+useful for unambiguous values of attributes; e.g., a main category
+"Person" may be sub-specified using an attribute to distinguish first
+name/last name, or to make differences between Patient and Medical
+doctor)
+
 
 ## License ##
 
