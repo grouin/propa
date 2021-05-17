@@ -146,7 +146,7 @@ sub dossier() {
 	    # singular forms within plural forms...
 	    if ($opt_t) {
 	      my $context=substr($fileContent,$startingOffset-1,length($token)+2);
-	      if ($context!~/$token\p{L}$/ && $context!~/^(\p{L}|\#|\')$token/) {
+	      if ($context!~/$token(\p{L}|\d)$/ && $context!~/^(\p{L}|\#|\'|\d)$token/) {
 		#warn "--- \"$token\" --- \"$context\" OK\n";
 		$propagatedAnnotations{"T$i\t$firstAnnotations{$token} $startingOffset $endingOffset\t$token"}++;
 		$i++;
