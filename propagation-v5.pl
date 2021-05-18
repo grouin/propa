@@ -14,6 +14,12 @@
 #
 # perl propagation.pl -r <directory containing files> -s <starting file name> -t -a
 
+# Cette version (v5), en plus de propager les annotations existantes,
+# permet également d'annoter les âges et dates qui ne l'auraient pas
+# été. Cette annotation se fait au moyen de règles (plusieurs formats
+# numériques et alphabétiques). Utile uniquement pour les expériences
+# de délexicalisation.
+# 
 # perl propagation-v5.pl -a -t -r data/medina/zero/essai/
 
 <<DOC;
